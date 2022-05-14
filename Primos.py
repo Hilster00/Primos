@@ -41,6 +41,5 @@ while len(primos)!=quantidade:
 os.system("cls")
 print(f"Os {len(primos)} primeiros primos são:",end="")
 for numero in primos:
-    print(f"{numero}",end=", ")
-    
+    print(f"{numero}",end=", ")    
     
