@@ -42,3 +42,5 @@ os.system("cls")
 print(f"Os {len(primos)} primeiros primos são:",end="")
 for numero in primos:
     print(f"{numero}",end=", ")
+    
+    
