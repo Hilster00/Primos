@@ -100,4 +100,4 @@ primos=retornar_primos(quantidade)
 print(f"Os numeros primos são:")
 for numero in primos:
     print(f"{numero}",end=", ")
-
+          
