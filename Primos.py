@@ -37,16 +37,15 @@ def printar_primos(quantidade):
         #bloco para encontrar os 'n' primeiros primos
         while True:
             
-            laco_concluido=True  #variavel para verificar se o laço foi concluido
 
             #laçao para verificar os primos
-            for x in range(3,identador):      
+            for x in range(3,identador,2):      
                 if(identador%x==0):  #verificacao se é um divisor
                     laco_concluido=False  #laço não concluido
                     break  #quebra de laço quando encontra o primeiro divisor
 
             #printa o número primo caso tenha concluido o laço
-            if(laco_concluido==True):
+            else:
                 print(f"{identador}",end="")
                 primos+=1
                 
@@ -76,7 +75,7 @@ def retornar_primos(quantidade):
 
         #bloco para encontrar os 'n' primeiros primos
         while len(primos)!=quantidade:                   
-            for x in range(3,identador):      
+            for x in range(3,identador,2):      
                 if(identador%x==0):  #verificacao se é um divisor
                     laco_concluido=False  #laço não concluido
                     break  #quebra de laço quando encontra o primeiro divisor
