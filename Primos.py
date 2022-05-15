@@ -32,7 +32,7 @@ def printar_primos(quantidade):
         if quantidade==1:
             print("O primeiro número primo é: 2")
         else:
-            print(f"Os {quantidade} primeiros primos são: 2")
+            print(f"Os {quantidade} primeiros primos são: 2",end=" ")
             
         #bloco para encontrar os 'n' primeiros primos
         while True:
