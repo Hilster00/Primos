@@ -29,33 +29,32 @@ def printar_primos(quantidade):
         identador=3  #variavel que será verificado se é primo
 
         #mensagens para diferentes quantidades
-        if quantidade==1:
-            print("O primeiro número primo é: 2")
-        else:
-            print(f"Os {quantidade} primeiros primos são: 2",end=" ")
-            
-        #bloco para encontrar os 'n' primeiros primos
-        while True:
-            
-
-            #laçao para verificar os primos
-            for x in range(3,identador,2):      
-                if(identador%x==0):  #verificacao se é um divisor
-                    laco_concluido=False  #laço não concluido
-                    break  #quebra de laço quando encontra o primeiro divisor
-
-            #printa o número primo caso tenha concluido o laço
-            else:
-                print(f"{identador}",end="")
-                primos+=1
+        msg= "O primeiro número primo é: 2" if quantidade==1 else f"Os {quantidade} primeiros primos são: 2"
+        
+        print(f"{msg}",end=" ")
+        if quantidade != 1:    
+            #bloco para encontrar os 'n' primeiros primos
+            while True:
                 
-                #bloco que verifica se ainda tem primos a serem encontrados
-                if(primos ==quantidade):
-                    break
+
+                #laçao para verificar os primos
+                for x in range(3,identador,2):      
+                    if(identador%x==0):  #verificacao se é um divisor
+                        laco_concluido=False  #laço não concluido
+                        break  #quebra de laço quando encontra o primeiro divisor
+
+                #printa o número primo caso tenha concluido o laço
                 else:
-                    #coloca ',' ao final da linha caso ainda tenha mais primos para serem encontrados
-                    print(", ",end="")
-            identador+=2  #incrementação de 2 em 2 para pular os pares
+                    print(f"{identador}",end="")
+                    primos+=1
+                    
+                    #bloco que verifica se ainda tem primos a serem encontrados
+                    if(primos ==quantidade):
+                        break
+                    else:
+                        #coloca ',' ao final da linha caso ainda tenha mais primos para serem encontrados
+                        print(", ",end="")
+                identador+=2  #incrementação de 2 em 2 para pular os pares
 
         
     else:
@@ -100,4 +99,4 @@ primos=retornar_primos(quantidade)
 print(f"Os numeros primos são:")
 for numero in primos:
     print(f"{numero}",end=", ")
-          
+            
