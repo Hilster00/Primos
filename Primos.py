@@ -29,7 +29,7 @@ def printar_primos(quantidade):
         identador=3  #variavel que será verificado se é primo
 
         #mensagens para diferentes quantidades
-        msg= "O primeiro número primo é: 2" if quantidade==1 else f"Os {quantidade} primeiros primos são: 2"
+        msg= "O primeiro número primo é: 2" if quantidade==1 else f"Os {quantidade} primeiros primos são: 2,"
         
         print(f"{msg}",end=" ")
         if quantidade != 1:    
